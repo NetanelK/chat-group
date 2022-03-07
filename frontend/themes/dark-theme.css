@@ -1,4 +1,4 @@
-.dark-theme {
+:root {
   --body: #333333;
   --bodySecondary: #120f13;
   --text: #e0e0e0;
@@ -19,24 +19,4 @@
   --chanelName: #bdbdbd;
 
   --logoutText: #eb5757;
-}
-
-.light-theme {
-}
-
-#app {
-  color: var(--text);
-  background-color: var(--body);
-
-  min-height: 100vh;
-  text-align: center;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
