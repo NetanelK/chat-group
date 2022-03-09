@@ -7,10 +7,17 @@
 }
 
 body {
-  font: 400 18px/1.5 'Noto Sans', sans-serif;
+  font: 500 18px/1.5 'Noto Sans Display', sans-serif;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 img {
