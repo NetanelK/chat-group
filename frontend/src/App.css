@@ -1,0 +1,58 @@
+.dark-theme {
+  --body: #252329;
+  --text: #e0e0e0;
+  --textSecondary: #828282;
+
+  --sidePanelBody: #120f13;
+  --sidePanelChannelText: #bdbdbd;
+  --sidePanelChannelInitials: #ffffff;
+
+  --buttonText: #f2f2f2;
+  --buttonBackground: 47, 128, 237;
+
+  --popupText: #e0e0e0;
+  --popupBackground: #252329;
+  --popupActive: #3c393f;
+
+  --inputText: #e0e0e0;
+  --inputPlaceholder: #828282;
+  --inputBackground: #3c393f;
+
+  --chanelInitials: #ffffff;
+  --chanelName: #bdbdbd;
+
+  --logoutText: #eb5757;
+}
+
+.light-theme {
+}
+
+#app {
+  color: var(--text);
+  background-color: var(--body);
+  display: flex;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,27 @@
+.chat-message {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  max-width: 53rem;
+  padding-top: 2.11rem;
+  text-align: left;
+}
+
+.chat-message__avatar {
+  width: 2.33rem;
+  height: 2.33rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.38rem;
+}
+
+.chat-message__name {
+  color: var(--textSecondary);
+  font-weight: 700;
+  padding-right: 0.83rem;
+}
+
+.chat-message__date {
+  font-size: 0.77rem;
+  font-weight: 500;
+  color: var(--textSecondary);
+}
