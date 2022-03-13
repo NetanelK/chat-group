@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Button from './Button';
 
 const InputContainer = styled.div`
   color: var(--inputText);
@@ -13,7 +14,7 @@ const InputContainer = styled.div`
   padding: 0.35em;
   padding-left: 1em;
 
-  & .material-icons {
+  /* & .material-icons {
     font-size: 1rem;
     background-color: rgb(var(--buttonBackground));
     border-radius: 0.44em;
@@ -26,7 +27,7 @@ const InputContainer = styled.div`
     &:hover {
       background-color: rgba(var(--buttonBackground), 0.5);
     }
-  }
+  } */
 
   & .input {
     background-color: transparent;
@@ -42,6 +43,11 @@ const InputContainer = styled.div`
   }
 `;
 
+/**
+ * @params {string} input - HTML input attributes
+ * @param  button - Button icon and click function
+ * @
+ *  */
 const Input = (props) => {
   const enterPressedHandler = (event) => {
     event.target.value.length > 0 && event.key === 'Enter' && props.onSubmit();
@@ -58,9 +64,9 @@ const Input = (props) => {
       />
 
       {props.icon && (
-        <span className={`material-icons md-18`} onClick={props.onSubmit}>
-          {props.icon.name}
-        </span>
+        <Button onClick={props.onSubmit}>
+          <span className={`material-icons md-18`}>{props.icon.name}</span>
+        </Button>
       )}
     </InputContainer>
   );

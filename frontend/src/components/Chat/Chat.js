@@ -1,4 +1,4 @@
-import Input from '../../UI/Input';
+import Input from '../UI/Input';
 import ChatMessage from '../ChatMessage/ChatMessage';
 
 const Chat = (props) => {
