@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  max-height: 100vh;
+}
+
 body {
   font: 500 18px/1.5 'Noto Sans Display', sans-serif;
   min-height: 100vh;

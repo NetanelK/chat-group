@@ -3,7 +3,7 @@
   color: var(--text);
   text-align: left;
 
-  width: 25%;
+  flex: 25%;
   max-width: 18em;
 }
 
