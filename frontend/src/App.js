@@ -7,24 +7,25 @@ import SidePanelChannel from './components/SidePanel/SidePanelChannel';
 
 import './App.css';
 
+const messages = [
+  {
+    name: 'Denzel Barret',
+    avatar: '/male_avatar.jpg',
+    date: new Date(2022, 2, 8, 14, 39),
+    content:
+      'Aenean tempus nibh vel est lobortis euismod. Vivamus laoreet viverra nunc 🐶',
+  },
+  {
+    name: 'Shaunna Firth',
+    avatar: '/female_avatar.jpg',
+    date: new Date(2022, 2, 8, 13, 29),
+    content:
+      'Morbi eget turpis ut massa luctus cursus. Sed sit amet risus quis neque condimentum aliquet. Phasellus consequat et justo eu accumsan 🙌. Proin pretium id nunc eu molestie. Nam consectetur, ligula vel mattis facilisis, ex mauris venenatis nulla, eget tempor enim neque eget massa 🤣',
+  },
+];
+
 function App() {
   const [channel, setChannel] = useState();
-  const messages = [
-    {
-      name: 'Denzel Barret',
-      avatar: '/male_avatar.jpg',
-      date: new Date(2022, 2, 8, 14, 39),
-      content:
-        'Aenean tempus nibh vel est lobortis euismod. Vivamus laoreet viverra nunc 🐶',
-    },
-    {
-      name: 'Shaunna Firth',
-      avatar: '/female_avatar.jpg',
-      date: new Date(2022, 2, 8, 13, 29),
-      content:
-        'Morbi eget turpis ut massa luctus cursus. Sed sit amet risus quis neque condimentum aliquet. Phasellus consequat et justo eu accumsan 🙌. Proin pretium id nunc eu molestie. Nam consectetur, ligula vel mattis facilisis, ex mauris venenatis nulla, eget tempor enim neque eget massa 🤣',
-    },
-  ];
 
   const channels = [
     {

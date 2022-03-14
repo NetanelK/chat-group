@@ -43,14 +43,11 @@ const InputContainer = styled.div`
   }
 `;
 
-/**
- * @params {string} input - HTML input attributes
- * @param  button - Button icon and click function
- * @
- *  */
 const Input = (props) => {
   const enterPressedHandler = (event) => {
-    event.target.value.length > 0 && event.key === 'Enter' && props.onSubmit();
+    event.target.value.length > 0 &&
+      event.key === 'Enter' &&
+      props.onSubmit(event.target);
   };
 
   const clickHandler = (event) => {};
