@@ -7,7 +7,12 @@ const ChatMessage = (props) => {
   const dateTime = props.date.toTimeString().slice(0, 5);
 
   return (
-    <div className={classes['chat-message']}>
+    <div
+      className={`${classes['chat-message']} ${
+        // TODO: Fix my messages alignment
+        props.isMine ? classes['chat-message--mine'] : ''
+      }`}
+    >
       <img
         className={classes['chat-message__avatar']}
         src={props.avatar}

@@ -5,6 +5,15 @@
   max-width: 53rem;
   padding-top: 2.11rem;
   text-align: left;
+  clear: both;
+}
+
+.chat-message--mine {
+  float: left;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: right;
+  position: relative;
 }
 
 .chat-message__avatar {
